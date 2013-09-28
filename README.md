@@ -1,2 +1,2 @@
-usamocommerce
+Ecommerce system based on PHP framework Symfony 2
 =============
