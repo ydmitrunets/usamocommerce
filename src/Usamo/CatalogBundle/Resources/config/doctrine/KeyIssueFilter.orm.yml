@@ -1,0 +1,22 @@
+Usamo\CatalogBundle\Entity\KeyIssueFilter:
+  type: entity
+  table: key_issue_filter
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\KeyIssueFilterRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    issue_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    filter_id:
+      type: integer
+      unsigned: true
+      nullable: false
+
+lifecycleCallbacks: {  }

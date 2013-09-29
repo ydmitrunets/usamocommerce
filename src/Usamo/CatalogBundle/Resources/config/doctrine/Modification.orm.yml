@@ -1,0 +1,49 @@
+Usamo\CatalogBundle\Entity\Modification:
+  type: entity
+  table: mod_modification
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\ModificationRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    good_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    price:
+      type: integer
+      unsigned: true
+      nullable: false
+    old_price:
+      type: integer
+      unsigned: true
+      nullable: false
+    purchase_price:
+      type: integer
+      unsigned: true
+      nullable: false
+    balance:
+      type: integer
+      unsigned: true
+      nullable: false
+    measure:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    sku:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    description:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+
+lifecycleCallbacks: {  }

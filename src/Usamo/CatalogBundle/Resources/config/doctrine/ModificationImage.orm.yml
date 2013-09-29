@@ -1,0 +1,23 @@
+Usamo\CatalogBundle\Entity\ModificationImage:
+  type: entity
+  table: mod_modification_image
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\ModificationImageRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    modification_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    src:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+
+lifecycleCallbacks: {  }

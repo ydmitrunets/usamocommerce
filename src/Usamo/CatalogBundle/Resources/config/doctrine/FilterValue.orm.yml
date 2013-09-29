@@ -1,0 +1,23 @@
+Usamo\CatalogBundle\Entity\FilterValue:
+  type: entity
+  table: filters_value
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\FilterValueRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    filter_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    value:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+
+lifecycleCallbacks: {  }

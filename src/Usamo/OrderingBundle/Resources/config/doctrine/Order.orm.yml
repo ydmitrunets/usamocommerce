@@ -1,0 +1,95 @@
+Usamo\CatalogBundle\Entity\Order:
+  type: entity
+  table: ord_order
+  repositoryClass: Usamo\OrderingBundle\Entity\Repository\OrderRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    number:
+      type: integer
+      unsigned: true
+      nullable: false
+    date_created:
+      type: datetime
+      unsigned: false
+      nullable: false
+    price:
+      type: integer
+      unsigned: true
+      nullable: false
+    customer_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    addressee_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    status_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    status_payment_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    addressee:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    delivery_time:
+      type: datetime
+      unsigned: false
+      nullable: false
+    comment:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    admin_comment:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    source_visit:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    payment_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    price_without_dicount:
+      type: integer
+      unsigned: true
+      nullable: false
+    discount_absolut:
+      type: integer
+      unsigned: true
+      nullable: false
+    discount_relative:
+      type: integer
+      unsigned: true
+      nullable: false
+    count_orders_custumer:
+      type: integer
+      unsigned: true
+      nullable: false
+    count_price_orders_custumer:
+      type: integer
+      unsigned: true
+      nullable: false
+    order_items:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+
+lifecycleCallbacks: {  }

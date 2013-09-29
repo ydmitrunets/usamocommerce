@@ -1,0 +1,39 @@
+Usamo\CatalogBundle\Entity\CatalogBrand:
+  type: entity
+  table: catalogue_brands
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\CatalogBrandRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    url:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    intro:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    text:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    logo:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+
+lifecycleCallbacks: {  }

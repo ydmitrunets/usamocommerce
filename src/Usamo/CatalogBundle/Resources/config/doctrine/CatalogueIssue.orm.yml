@@ -1,0 +1,53 @@
+Usamo\CatalogBundle\Entity\CatalogueIssue:
+  type: entity
+  table: catalogue_issues
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\CatalogueIssueRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    parent:
+      type: integer
+      unsigned: true
+      nullable: false
+    level:
+      type: integer
+      unsigned: true
+      nullable: false
+    url:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    sort:
+      type: integer
+      unsigned: true
+      nullable: false
+    enabled:
+      type: integer
+      unsigned: true
+      nullable: false
+    islink:
+      type: integer
+      unsigned: true
+      nullable: false
+    is_for_goods:
+      type: integer
+      unsigned: true
+      nullable: false
+    logo:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+
+lifecycleCallbacks: {  }

@@ -1,0 +1,27 @@
+Usamo\CatalogBundle\Entity\CatalogueCurrency:
+  type: entity
+  table: catalogue_currency
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\CatalogueCurrencyRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    factor:
+      type: integer
+      unsigned: true
+      nullable: false
+    main:
+      type: integer
+      unsigned: true
+      nullable: false
+
+lifecycleCallbacks: {  }

@@ -1,0 +1,8 @@
+usamo_ordering:
+    resource: "@UsamoOrderingBundle/Resources/config/routing.yml"
+    prefix:   /
+
+usamo_catalog:
+    resource: "@UsamoCatalogBundle/Resources/config/routing.yml"
+    prefix:   /catalog
+

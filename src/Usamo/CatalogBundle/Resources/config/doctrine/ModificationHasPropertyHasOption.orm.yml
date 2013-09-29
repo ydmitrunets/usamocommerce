@@ -1,0 +1,30 @@
+Usamo\CatalogBundle\Entity\ModificationHasPropertyHasOption:
+  type: entity
+  table: mod_modification_has_property_has_option
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\ModificationHasPropertyHasOptionRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    modification_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    property_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    option_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    good_id:
+      type: integer
+      unsigned: true
+      nullable: false
+
+lifecycleCallbacks: {  }

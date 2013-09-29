@@ -1,0 +1,19 @@
+Usamo\CatalogBundle\Entity\Property:
+  type: entity
+  table: mod_property
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\PropertyRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    value:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+
+lifecycleCallbacks: {  }

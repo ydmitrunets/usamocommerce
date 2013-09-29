@@ -1,0 +1,97 @@
+Usamo\CatalogBundle\Entity\CatalogueItem:
+  type: entity
+  table: catalogue_items
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\CatalogueItemRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    issue:
+      type: integer
+      unsigned: true
+      nullable: false
+    brand:
+      type: integer
+      unsigned: true
+      nullable: false
+    url:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    articul:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    intro:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    text:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    comments:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    price:
+      type: integer
+      unsigned: true
+      nullable: false
+    price_old:
+      type: integer
+      unsigned: true
+      nullable: false
+    currency:
+      type: integer
+      unsigned: true
+      nullable: false
+    prev:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    full:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    exists:
+      type: integer
+      unsigned: true
+      nullable: false
+    meta_title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    meta_description:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    meta_keywords:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    created:
+      type: datetime
+      unsigned: false
+      nullable: false
+
+lifecycleCallbacks: {  }

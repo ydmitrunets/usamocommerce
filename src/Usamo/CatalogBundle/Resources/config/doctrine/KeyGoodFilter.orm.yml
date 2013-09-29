@@ -1,0 +1,26 @@
+Usamo\CatalogBundle\Entity\KeyGoodFilter:
+  type: entity
+  table: key_good_filter
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\KeyGoodFilterRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    good_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    filter_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    filter_value_id:
+      type: integer
+      unsigned: true
+      nullable: false
+
+lifecycleCallbacks: {  }

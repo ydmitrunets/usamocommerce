@@ -1,0 +1,50 @@
+Usamo\CatalogBundle\Entity\Addressee:
+  type: entity
+  table: ord_addressee
+  repositoryClass: Usamo\OrderingBundle\Entity\Repository\AddresseeRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    name:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    phone:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    email:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    country:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    region:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    city:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    address:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+
+lifecycleCallbacks: {  }
+

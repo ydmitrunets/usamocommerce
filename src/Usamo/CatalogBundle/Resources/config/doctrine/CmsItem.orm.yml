@@ -1,0 +1,44 @@
+Usamo\CatalogBundle\Entity\CmsItem:
+  type: entity
+  table: cms_items
+  repositoryClass: Usamo\CatalogBundle\Entity\Repository\CmsItemRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    url:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    text:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    meta_title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    meta_description:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    meta_keywords:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+
+lifecycleCallbacks: {  }

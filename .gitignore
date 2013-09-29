@@ -1,2 +1,5 @@
 /vendor
 /README.md
+/.idea
+/app/cache
+/app/logs

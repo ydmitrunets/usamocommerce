@@ -1,0 +1,28 @@
+Usamo\CatalogBundle\Entity\ArticleItem:
+  type: entity
+  table: article_items
+  repositoryClass: Usamo\OrderingBundle\Entity\Repository\ArticleItemRepository
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: true
+      nullable: false
+      generator:
+        strategy: AUTO
+    status_id:
+      type: integer
+      unsigned: true
+      nullable: false
+    status_name:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    status_desc:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+
+lifecycleCallbacks: {  }

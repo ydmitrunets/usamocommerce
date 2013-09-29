@@ -1,0 +1,3 @@
+usamo_catalog_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: UsamoCatalogBundle:Default:index }
